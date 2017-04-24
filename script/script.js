@@ -147,15 +147,15 @@ function calcscore(){
 
     results = "You're " + (
         score >  200 ? " Super Mega Awkward 😳" :
-        score >  180 ? " Extremely Awkward 😦" :
+        score >  160 ? " Extremely Awkward 😦" :
         score >  120 ? " Normal Awkward 🤓" :
         score >  60 ? " a Tiny bit Awkward 🤗" :
         score >   0 ? " not so Awkward, which is Awkward! 😒" :
                      " Hey! you didn't even answer any of the questions. This is Awkward."
     );
     resultsText = "What does it mean? " + (
-        score >  250 ? " It means everyday is a battle filled with awkward glances and clunky body parts. " :
-        score >  180 ? " It means when you're in your element you're most likely fine. Buuut when outside of you're comfort zone shit gets weird." :
+        score >  200 ? " It means everyday is a battle filled with awkward glances and clunky body parts. " :
+        score >  160 ? " It means when you're in your element you're most likely fine. Buuut when outside of you're comfort zone shit gets weird." :
         score >  120 ? " It means your days are tough but you've figured out a few survival strategies." :
         score >  60 ? " It means you have your moments but generally you're fine." :
         score >   0 ? " It means you're one of the few people who own every room you walk into, congratulations!" :
