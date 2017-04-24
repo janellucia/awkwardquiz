@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How Awkward Are You?</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Lobster" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="wrapper clearfix">
+	<div id="carousel">
+		<div id="quiz-questions">
+			<div class="question-header" onChange="displayImage(this.value)">
+				<h1>How Awkward are You?</h1>
+			</div>
+			<ul>
+				<li class="question" id="question-start">
+					<div class="question-wrap">
+						<div class="opening-title">
+							<h3>Test out how Awkward you can be!</h3>
+						</div>
+						<p class="opening-text">Say “sorry” to that door you just bumped into after you waved back to the stranger who wasn’t actually waving at you, BECAUSE, we’re going to play a game called How Awkward Are You? Ready? Set, begin:</p>
+	    				<div id="buttons" class="next-btn start-button">
+	    					<button class="question-1" id="next" href="#question-1" >Get Started</button>
+	    				</div>
+					</div>
+				</li><!-- question start	 -->
+				<li class="question" id="question-1">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-start" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>When Someone sneezes, what do you do?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer2" value="30">
+								<label class="answer">Jump in the air because I'm scared</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer2" value="5">
+								<label class="answer">Ignore it.</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer2" value="15">
+								<label class="answer">The first time? Or the second time?</label>					
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer2" value="0">
+								<label class="answer">Say "God, Bless you!"</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button class="question-2" id="next">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-1" min="0" max="8" value="1" data-sizing="px">
+							<output for="question-1" onforminput="value = 1"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 1	 -->
+
+				<li class="question" id="question-2">
+					<div class="question-wrap">
+						<div class="prev-btn" id="buttons">
+							<button id="prev" class="question-1"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>How's your hand/eye coordination?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer3" value="15">
+								<label class="answer">It's Uhhhhhhh....</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer3" value="0">
+								<label class="answer">I'm a pro</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer3" value="5">
+								<label class="answer">When I'm prepared I do alright.</label>					
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer3" value="30">
+								<label class="answer">Not good, I hate throwing or catching balls</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button class="question-3" id="next">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-2" min="0" max="8" value="2" data-sizing="px">
+							<output for="question-2" onforminput="value = 2"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 2	 -->
+
+				<li class="question" id="question-3">
+					<div class="question-wrap">
+						<div class="prev-btn" id="buttons">
+							<button id="prev" class="question-2"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>Do Your Jokes Typically Fall Flat?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer4" value="5">
+								<label class="answer">I can't tell, I'm too busy laughing</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer4" value="30">
+								<label class="answer">Flatter than a wig in July</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer4" value="0">
+								<label class="answer">I've been told I'm a natural comedian</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer4" value="15">
+								<label class="answer">After I explain it they get it</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-4">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-3" min="0" max="8" value="3" data-sizing="px">
+							<output for="question-3" onforminput="value = 3"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 3	 -->
+				<li class="question" id="question-4">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-3" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>You're Using the Bathroom and someone knocks, what do you say?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer5" value="0">
+								<label class="answer">Someone's in here..</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer5" value="15">
+								<label class="answer">Sorry</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer5" value="5">
+								<label class="answer">One Minute</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer5" value="30">
+								<label class="answer">Nothing, I'm traumatized</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-5">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-4" min="0" max="8" value="4" data-sizing="px">
+							<output for="question-4" onforminput="value = 4"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 4	 -->
+				<li class="question" id="question-5">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-4" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>What do you do when a Stranger says Goodnight?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer6" value="30">
+								<label class="answer">I Love you. I mean, shit!</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer6" value="15">
+								<label class="answer">Have a good morning.</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer6" value="5">
+								<label class="answer">I don't even acknowledge them</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer6" value="0">
+								<label class="answer">You too</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-6">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-5" min="0" max="8" value="5" data-sizing="px">
+							<output for="question-5" onforminput="value = 5"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 5	 -->
+				<li class="question" id="question-6">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-5" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>Can you Properly give a High-Five?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer7" value="0">
+								<label class="answer">I hand out High Fives all day</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer7" value="5">
+								<label class="answer">I'm okay.</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer7" value="30">
+								<label class="answer">Absolutely not.</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer7" value="15">
+								<label class="answer">If I know it's coming.</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-7" role="button">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-6" min="0" max="8" value="6" data-sizing="px">
+							<output for="question-6" onforminput="value = 6"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 6	 -->
+				<li class="question" id="question-7">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-6" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>What do you do when you see soemone you kind of know on the street</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer8" value="15">
+								<label class="answer">Start checking my phone.</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer8" value="30">
+								<label class="answer">Try and talk myself into saying hi.</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer8" value="5">
+								<label class="answer">Shrug it off and keep walking.</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer8" value="0">
+								<label class="answer">Say Hello.</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-8">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-7" min="0" max="8" value="7" data-sizing="px">
+							<output for="question-7" onforminput="value = 7"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 7	 -->
+				<li class="question" id="question-8">
+					<div class="question-wrap">
+						<div id="buttons" class="prev-btn">
+							<button class="question-7" id="prev"><i class="fa fa-backward" aria-hidden="true"></i></button>
+						</div>
+						<div class="the-question">
+							<h3>You Accidentally Grab someone’s hand while riding public transportation, What do you do?</h3>
+						</div>
+						<form>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer9" value="15">
+								<label class="answer">Start blushing.</label>
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer9" value="5">
+								<label class="answer">Pretend it didn't happen.</label>	
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer9" value="30">
+								<label class="answer">Run away, in the opposite direction!</label>			
+							</div>
+							<div class="answer-wrap">
+						  		<input class="calc" type="radio" name="answer9" value="0">
+								<label class="answer">Make a joke and move on.</label>	
+							</div>
+						</form>
+						<div id="buttons" class="next-btn">
+							<button id="next" class="question-finish">Next</button>
+						</div>
+						<div id="range-input">
+							<input type="range" name="question-8" min="0" max="8" value="8" data-sizing="px">
+							<output for="question-8" onforminput="value = 8"></output>
+						</div>
+					</div><!-- question-wrap	 -->
+				</li><!-- question 8	 -->
+				<li class="question" id="question-finish">
+					<div class="question-wrap">
+						<div class="question-wrap">
+						<div class="finish-header">
+							<h3>The Results are in!</h3>
+							<section>
+								<h2 class="result">Hey! you didn't even answer any of the questions. This is Awkward.</h2>
+								<p class="result-text"></p>
+								<h4 class="score">Total Score: <span class="final-score">00</span></h4>
+							</section>
+							<div class="tweet">	
+								<p>Remember that at our core, we all check every awkward box.</p>
+								<button class="share-button"><a  href="https://twitter.com/intent/tweet?text=Find%20out%20how%20Awkward%20you%20are%20via%20awkward.janellucia.com/%20@janellucia" data-size="large" target="new">tweet</a></button>
+							</div>
+						</div>
+	    				<div id="buttons" class="next-btn start-over">
+	    					<button class="start-over" id="next">Play Again!</button>
+	    				</div>
+					</div>
+				</li><!-- question start	 -->
+			</ul><!-- quiz-wrapper	 -->
+		</div><!-- quiz-questions	 -->
+	</div><!-- carousel	 -->
+</div><!-- wrapper	 -->
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="script/jquery.vide.min.js"></script>
+<script src="script/script.js"></script>
+	
+</body>
+</html>
